@@ -1,0 +1,38 @@
+{
+    "name": "oapi-fuzz",
+    "version": "0.0.0-beta",
+    "description": "Util for OAPI Fuzzing",
+    "author": {
+        "email": "dextermallo@gmail.com",
+        "name": "dextermallo"
+    },
+    "scripts": {
+        "build": "tsc",
+        "prestart": "npm run build",
+        "start": "node dist/index.js",
+        "pretest": "rm -rf out && mkdir out",
+        "test": "jest --runInBand"
+    },
+    "dependencies": {
+        "@types/babel__traverse": "^7.17.1",
+        "@types/jest": "^27.0.2",
+        "@types/node": "^13.13.52",
+        "class-transformer": "^0.5.1",
+        "commander": "^11.1.0",
+        "dotenv": "^10.0.0",
+        "figlet": "^1.7.0",
+        "node-fetch": "^2.7.0",
+        "reflect-metadata": "^0.1.14",
+        "request": "^2.88.2",
+        "ts-jest": "^29.1.1",
+        "typescript": "^5.2.2",
+        "winston": "^3.11.0"
+    },
+    "resolutions": {
+        "@types/babel__traverse": "7.0.6"
+    },
+    "devDependencies": {
+        "@types/figlet": "^1.5.8",
+        "@types/uuid": "^9.0.5"
+    }
+}

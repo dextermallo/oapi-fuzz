@@ -1,0 +1,1 @@
+export type CustomResponse = { body: any; statusCode: number; }
